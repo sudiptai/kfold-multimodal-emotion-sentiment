@@ -1,0 +1,34 @@
+{
+  "experiment": "audio_emotion_lstm",
+  "modality": "audio",
+  "task": "emotion",
+  "arch": "lstm",
+  "n_train": 3304,
+  "n_test": 826,
+  "classes": [
+    "happiness",
+    "sadness",
+    "anger",
+    "fear",
+    "disgust"
+  ],
+  "kfold_val_acc": [
+    0.8699,
+    0.9501,
+    0.9803,
+    0.9879,
+    0.9939
+  ],
+  "kfold_val_acc_mean": 0.8711,
+  "kfold_val_acc_std": 0.0086,
+  "heldout_test_acc": 0.8777,
+  "correct": 725,
+  "smote_before_split": true,
+  "optimizer": "adam",
+  "lr": 0.001,
+  "epochs_per_fold": 20,
+  "final_epochs": 40,
+  "fixed_epochs": false,
+  "glove": null,
+  "note": "Produced with notebooks/kfold_lstm_audio_emotion.ipynb (same pipeline, seed 0). kfold_val_acc_mean/std are from the fresh-model-per-fold re-run (0.864/0.882/0.861/0.868/0.880); the per-fold list above is from the single-model run that produced the held-out figure."
+}

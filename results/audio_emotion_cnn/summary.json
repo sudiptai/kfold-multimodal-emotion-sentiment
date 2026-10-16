@@ -1,0 +1,33 @@
+{
+  "experiment": "audio_emotion_cnn",
+  "modality": "audio",
+  "task": "emotion",
+  "arch": "cnn",
+  "n_train": 3304,
+  "n_test": 826,
+  "classes": [
+    "happiness",
+    "sadness",
+    "anger",
+    "fear",
+    "disgust"
+  ],
+  "kfold_val_acc": [
+    0.8668683767318726,
+    0.8895612955093384,
+    0.8653555512428284,
+    0.8865355253219604,
+    0.8606060743331909
+  ],
+  "kfold_val_acc_mean": 0.8737853646278382,
+  "kfold_val_acc_std": 0.011866311649652735,
+  "heldout_test_acc": 0.8486682808716707,
+  "correct": 701,
+  "smote_before_split": true,
+  "optimizer": "adam",
+  "lr": 0.001,
+  "epochs_per_fold": 20,
+  "final_epochs": 40,
+  "glove": null,
+  "seconds": 738.1
+}

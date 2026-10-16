@@ -1,0 +1,35 @@
+{
+  "experiment": "audio_sentiment_cnn",
+  "modality": "audio",
+  "task": "sentiment",
+  "arch": "cnn",
+  "n_train": 2932,
+  "n_test": 734,
+  "classes": [
+    "very positive",
+    "positive",
+    "slight positive",
+    "neutral",
+    "negative",
+    "very negative"
+  ],
+  "kfold_val_acc": [
+    0.7887563705444336,
+    0.7614991664886475,
+    0.7627986073493958,
+    0.755972683429718,
+    0.7849829196929932
+  ],
+  "kfold_val_acc_mean": 0.7708019495010376,
+  "kfold_val_acc_std": 0.013371339051677098,
+  "heldout_test_acc": 0.7356948228882834,
+  "correct": 540,
+  "smote_before_split": true,
+  "optimizer": "adam",
+  "lr": 0.001,
+  "epochs_per_fold": 20,
+  "final_epochs": 40,
+  "fixed_epochs": false,
+  "glove": null,
+  "seconds": 427.2
+}
