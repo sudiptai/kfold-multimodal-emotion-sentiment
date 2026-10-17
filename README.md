@@ -36,7 +36,7 @@ B  text feature extraction (GloVe)   ─┘      └─ D  LSTM ─┘      └�
 ## Installation
 
 ```bash
-git clone https://github.com/<user>/kfold-multimodal-emotion-sentiment.git
+git clone <repository-url>   # anonymised during review: https://anonymous.4open.science/r/kfold-multimodal-emotion-sentiment-3B48/
 cd kfold-multimodal-emotion-sentiment
 python -m venv .venv && source .venv/bin/activate      # optional
 pip install -r requirements.txt
